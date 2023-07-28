@@ -11,7 +11,7 @@ import { toast } from "react-toastify";
 import { useEffect } from "react";
 
 const loginSchema = object({
-  email: string()
+  email: string() 
     .min(1, "Email address is required")
     .email("Email Address is invalid"),
   password: string()
