@@ -12,7 +12,7 @@ const ProfilePage = () => {
     try {
       store.setRequestLoading(true);
       const VITE_SERVER_ENDPOINT = import.meta.env.VITE_SERVER_ENDPOINT;
-      const response = await fetch(`${VITE_SERVER_ENDPOINT}/api/users/me`, {
+      const response = await fetch(`${VITE_SERVER_ENDPOINT}/api/users/me`, { 
         credentials: "include",
       });
       if (!response.ok) {
